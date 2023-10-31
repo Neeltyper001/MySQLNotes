@@ -1,0 +1,1 @@
+INSERT INTO employees VALUES (1,"Raj Mishra",34.67,"2023-04-09","raj@mishra","9090393923"),(2,"Mohan Singh",23.89,"2023-05-09","mohan@singh","898947432323"),(3,"Rajesh Kumar",45.67,"2023-06-08","rajesh@kumar","8986542323");

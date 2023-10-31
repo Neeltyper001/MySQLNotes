@@ -1,0 +1,1 @@
+CREATE VIEW emp_view AS SELECT emp_name , hourly_pay from employees;

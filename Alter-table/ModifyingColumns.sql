@@ -1,0 +1,28 @@
+-- Modifying EACH column by ADDING not null
+ALTER TABLE employees
+MODIFY COLUMN emp_name VARCHAR(50) NOT NULL,
+MODIFY COLUMN hourly_pay decimal(5,2) NOT NULL,
+MODIFY COLUMN hired_date DATE NOT NULL;
+
+-- MODIYING PHONE_NUM to email
+ALTER TABLE employees
+CHANGE phone_num TO email VARCHAR(50);
+
+-- ADDING AND THEN DELETING A COLUMN
+ALTER TABLE employees
+ADD COLUMN nick_name VARCHAR(50) NOT NULL;
+
+ALTER TABLE employees
+DROP COLUMN nick_name;
+
+-- ADDING PHONE NUMS COLUMNS
+ALTER TABLE employees
+ADD COLUMN phone_num VARCHAR(15) NOT NULL;
+
+-- ADDING "UNIQUE" CONSTRAINT
+ALTER TABLE employees
+ADD UNIQUE(email,phone_num);
+
+-- DROPPING "UNIQUE" CONSTRAINT
+ALTER TABLE employees
+DROP INDEX (email);
